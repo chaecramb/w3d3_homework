@@ -1,11 +1,21 @@
-<section>
-  <% @items.each do |item| %>
-    <article>
-      <dl>
-        <dt>Item: </dt>
-        <dd><%= item['item']%></dd>
-      </dl>
-      <a href="/items/<%= item['id']%>">show</a>
-    </article>
-  <% end %>
-</section>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h5>Today's to-do items:</h5>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout panel">
+          <% @items.each do |item| %>
+          <article>
+            <dl>
+              <dt>Item: </dt>
+              <dd><%= item['item']%></dd>
+            </dl>
+            <a href="/items/<%= item['id']%>" class="small round button">show</a>
+          </article>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   

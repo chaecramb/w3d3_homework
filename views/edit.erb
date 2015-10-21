@@ -1,17 +1,22 @@
 <section>
-  <form method="post" action="/items/<%= @item['id']%>">
-    <dl>
-      <dt><label for='item'>Item:</label></dt>
-      <dd><input type="text" id='item' name="item" value="<%= @item['item']%>" autofocus>
-      </dd>
-    </dl>
-    <dl>
-      <dt><label for='details'>Details:</label></dt>
-      <dd><textarea rows='4' cols='50' id='details' name="details"><%= @item['details']%></textarea></dd>
-    </dl>
-    <button>Edit task</button>
-  </form>
-  <form method="post" action="/items/<%= @item['id']%>/delete">
-    <button>Delete task</button>
-  </form>
+  <div class="row">
+    <div class="large-12 columns">
+      <form method="post" action="/items/<%= @item['id']%>">
+
+        <dl>
+          <dt><label for='item'>Item:</label></dt>
+          <dd><input type="text" id='item' name="item" value="<%= @item['item']%>" autofocus>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for='details'>Details:</label></dt>
+          <dd><textarea rows='4' cols='50' id='details' name="details"><%= @item['details']%></textarea></dd>
+        </dl>
+        <button class="small round button">Edit task</button>
+      </form>
+      <form method="post" action="/items/<%= @item['id']%>/delete">
+        <button class="small round button">Delete task</button>
+      </form>
+    </div>
+  </div>
 </section>

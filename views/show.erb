@@ -1,4 +1,5 @@
-<section>
+<div class="row">
+  <div class="large-12 columns">
     <article>
       <dl>
         <dt>Item: </dt>
@@ -8,6 +9,7 @@
         <dt>Details: </dt>
         <dd><%= @item['details']%></dd>
       </dl>
-      <a href="/items/<%= @item['id']%>/edit">edit</a>
+      <a href="/items/<%= @item['id']%>/edit" class="small round button">edit</a>
     </article>
-</section>
+  </div>
+</div>

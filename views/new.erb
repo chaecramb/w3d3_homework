@@ -1,14 +1,18 @@
 <section>
   <form method="post" action="/items">
-    <dl>
-      <dt><label for='item'>Item:</label></dt>
-      <dd><input type="text" id='item' name="item" placeholder="item" autofocus>
-      </dd>
-    </dl>
-    <dl>
-      <dt><label for='details'>Details:</label></dt>
-      <dd><textarea rows='4' cols='50' id='details' name="details" placeholder="details"></textarea></dd>
-    </dl>
-    <button>Add task</button>
-  </form>
+    <div class="row">
+      <div class="large-12 columns">
+        <dl>
+          <dt><label for='item'>Item:</label></dt>
+          <dd><input type="text" id='item' name="item" placeholder="item" autofocus>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for='details'>Details:</label></dt>
+          <dd><textarea rows='4' cols='50' id='details' name="details" placeholder="details"></textarea></dd>
+        </dl>
+        <button class="small round button">Add task</button>
+      </form>
+    </div>
+  </div>
 </section>
