@@ -1,0 +1,13 @@
+<section>
+    <article>
+      <dl>
+        <dt>Item: </dt>
+        <dd><%= @item['item']%></dd>
+      </dl>
+      <dl>
+        <dt>Details: </dt>
+        <dd><%= @item['details']%></dd>
+      </dl>
+      <a href="/items/<%= @item['id']%>/edit">edit</a>
+    </article>
+</section>
