@@ -12,7 +12,7 @@
           <dt><label for='details'>Details:</label></dt>
           <dd><textarea rows='4' cols='50' id='details' name="details"><%= @item['details']%></textarea></dd>
         </dl>
-        <button class="small round button">Edit task</button>
+        <button class="small round button">Save changes</button>
       </form>
       <form method="post" action="/items/<%= @item['id']%>/delete">
         <button class="small round button">Delete task</button>

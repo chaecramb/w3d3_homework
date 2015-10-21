@@ -5,6 +5,7 @@
     <div class="row">
       <div class="large-12 columns">
         <div class="callout panel">
+          <%= '<p>no tasks today</p>' unless @items.first %>
           <% @items.each do |item| %>
           <article>
             <dl>
