@@ -1,0 +1,10 @@
+<section>
+  <% @items.each do |item| %>
+    <article>
+      <dl>
+        <dt>Item: </dt>
+        <dd><%= item['item']%></dd>
+      </dl>
+    </article>
+  <% end %>
+</section>
